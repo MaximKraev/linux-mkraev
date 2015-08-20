@@ -1,0 +1,10 @@
+--- linux-4.1/fs/overlayfs/super.c.orig	2015-08-20 10:54:21.659857562 +0300
++++ linux-4.1/fs/overlayfs/super.c	2015-08-20 11:39:48.628240133 +0300
+@@ -1029,6 +1029,7 @@
+ 	.name		= "overlay",
+ 	.mount		= ovl_mount,
+ 	.kill_sb	= kill_anon_super,
++	.fs_flags	= FS_USERNS_MOUNT,
+ };
+ MODULE_ALIAS_FS("overlay");
+ 

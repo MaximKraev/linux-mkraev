@@ -1,0 +1,5 @@
+linux*.tar.sign
+linux*.tzr.xz
+patch*.sign
+patch*.xz
+linux.install.pkg
